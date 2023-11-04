@@ -65,22 +65,22 @@ table 50100 EmployeeTable
     
     trigger OnInsert()
     begin
-        
+        Message('Data Inserted');
     end;
     
     trigger OnModify()
     begin
-        
+        Message('Data Modified');
     end;
     
     trigger OnDelete()
     begin
-        
+        Message('Data deleted');
     end;
     
     trigger OnRename()
     begin
-        
+        Message('Data Renamed');
     end;
     
 }
