@@ -47,14 +47,17 @@ table 50100 EmployeeTable
     keys
     {
         //Whatever will be the first key will be declared as the primary key
-       key(primaryKey;EmployeeCode){
+       key(PrimaryKey;EmployeeCode){
+        //Records will be stored in ascending order
+        //Speeds up retrieving of records
+        //Only one key can be clustered - You can't have two keys with Clustered set to true
+
+        //If many keys are created, entry of data will be slow due to every secondary key sorting should be adhered to.
+
         Clustered = True;
        }
-    }
-    
-    fieldgroups
-    {
-        // Add changes to field groups here
+
+       key(SecondaryKey;EmployeeName){}
     }
     
     var
