@@ -1,6 +1,6 @@
 page 50103 addTwo
 {
-    PageType = Card;
+    PageType = RoleCenter;
     ApplicationArea = All;
     UsageCategory = Administration;
         
@@ -12,10 +12,10 @@ page 50103 addTwo
             {
                 ApplicationArea = All;
                 
-                trigger OnAction()
-                begin
-                    MyCodeUnit.Run();
-                end;
+                // trigger OnAction()
+                // begin
+                //     MyCodeUnit.Run();
+                // end;
             }
         }
     }
